@@ -4,14 +4,20 @@
 
 ### Реализованные сценарии
 
-Созданы юнит-тесты, покрывающие классы `Bun`, `Burger`, `Ingredient`, `Database`
+Созданы юнит-тесты, покрывающие классы `Burger`
 
 Процент покрытия 100% (отчет: `htmlcov/index.html`)
 
+В тестах используются моки и параметризация.
+
+Покрытие кода: 100% для praktikum/burger.py
+
 ### Структура проекта
 
-- `praktikum` - пакет, содержащий код программы
-- `tests` - пакет, содержащий тесты, разделенные по классам. Например, `bun_test.py`, `burger_test.py` и т.д.
+- `praktikum` - код программы
+- `tests` - тесты
+
+
 
 ### Запуск автотестов
 
@@ -21,4 +27,5 @@
 
 **Запуск автотестов и создание HTML-отчета о покрытии**
 
->  `$ pytest --cov=praktikum --cov-report=html`
+>  `python -m pytest -v --cov=praktikum.burger --cov-report=term-missing`
+>  `python -m pytest --cov=praktikum.burger --cov-report=html`
